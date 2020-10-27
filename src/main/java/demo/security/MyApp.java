@@ -53,6 +53,16 @@ public class MyApp {
         // incomplete implementation
     }
 
+    public void saveDataAgain(HttpServletRequest request) throws IOException {
+        String data = request.getParameter("data");
+        File tempDir;
+        tempDir = File.createTempFile("", ".");
+        tempDir.delete();
+        tempDir.mkdir();
+        Files.exists(Paths.get("/tmp/", data));
+        // incomplete implementation
+    }
+
     public void modResponse(HttpServletResponse response) {
         Cookie c = new Cookie("SECRET", "SECRET");
         response.addCookie(c);
