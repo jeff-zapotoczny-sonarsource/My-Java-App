@@ -1,3 +1,4 @@
 target
 .idea
 security.iml
+.settings/org.sonarlint.eclipse.core.prefs
